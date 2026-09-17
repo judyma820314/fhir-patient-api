@@ -4,7 +4,7 @@ A Spring Boot REST API implementing FHIR R4 Patient resource endpoints — built
 
 ## What this is
 
-This is a miniature version of the inbound integration pattern HDSF uses when a hospital information system like Avelios Medical sends patient data to SAP. It accepts and returns FHIR R4-compliant Patient JSON.
+This is a miniature version of the inbound integration pattern HDSF uses when a hospital information system sends patient data to SAP. It accepts and returns FHIR R4-compliant Patient JSON.
 
 ## Endpoints
 
