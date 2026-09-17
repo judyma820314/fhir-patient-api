@@ -63,4 +63,4 @@ curl http://localhost:8080/fhir/Patient/1
 
 ## Context
 
-Built as part of learning the Java/Spring Boot stack for SAP Healthcare integration work — specifically the integration pattern between Avelios Medical and SAP S/4HANA via HDSF.
+Built as part of learning the Java/Spring Boot stack for SAP Healthcare integration work
