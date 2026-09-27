@@ -1,4 +1,4 @@
-the package com.sap.fhir.patient_api;
+package com.sap.fhir.patient_api;
 
 import org.springframework.stereotype.Service;
 
@@ -22,5 +22,18 @@ public class PatientService {
 
     public Optional<Patient> findById(String id) {
         return Optional.ofNullable(store.get(id));
+    }
+
+    public Optional<Patient> update(String id, Patient patient) {
+        if (!store.containsKey(id)) {
+            return Optional.empty();
+        }
+        Patient updated = Patient.withId(patient, id);
+        store.put(id, updated);
+        return Optional.of(updated);
+    }
+
+    public boolean deleteById(String id) {
+        return store.remove(id) != null;
     }
 }
